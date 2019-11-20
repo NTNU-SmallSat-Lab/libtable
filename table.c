@@ -357,7 +357,7 @@ void table_free(struct table *t)
                 }
         }
 
-        for (i = 0; i < t->cols; ++i) {
+        for (i = 0; i < t->rows; ++i) {
                 free(t->data[i]);
         }
 
